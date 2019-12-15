@@ -13,8 +13,9 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <h4>Previous Note:</h4>
-                            <p class="previousNotes">{{body}}</p>
-                            <button type="button" class="btn btn-dark deleteNote" data-note-id={{_id}}>Delete Note</button><br>
+                            <p class="previousNotes">{{body}}
+                            <button type="button" class="btn btn-sm btn-danger mb-3 deleteNote" data-note-id={{_id}}><i class="far fa-times-circle"></i></button>
+                            </p>
                         </div>
                     </div>
                 {{/each}}
@@ -30,7 +31,7 @@
             </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary save-note" data-id={{_id}}>Save</button>
+        <button type="button" class="btn btn-sm btn-info save-note" data-id={{_id}}>Save</button>
       </div>
     </div>
   </div>

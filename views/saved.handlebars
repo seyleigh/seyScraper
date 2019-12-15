@@ -1,13 +1,12 @@
 {{! Nav Bar }}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">SeyScraper</a>
+<nav class="navbar navbar-expand-lg navbar-dark  bg-transparent">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="/saved">Saved Articles</a>
+      <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="/saved">Saved</a>
 
     </div>
   </div>
@@ -16,13 +15,12 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4 text-center">Saved Articles</h1>
-    <p class="lead text-center"><strong>Review and add notes to your saved articles from ArtNews.</strong></p>
+    <h1 class="text-center">Saved Articles</h1>
   </div>
 </div>
 
 
-<div id="articles">
+<div id="articles" class="row">
     {{#each articles}}
         {{> saved-article }}
     {{/each}}
