@@ -17,7 +17,7 @@ This is an app that uses:
 
 ---
 
-The user can enter in a burger and it will be added to the mySQL tables and displayed on a list of uneaten burgers. Then they can click the button to eat the burger which will change the value of whether its eaten or not and move it to the opposite list. Theres also an option to delete the burger from the list if you're just sick of looking at it.
+This site scrapes a news page from The Denver Post. User can save articles for later and delete them as well from the Mongo datatbase.
 
 ![Page Example](public/assets/images/scraper.gif)
 
